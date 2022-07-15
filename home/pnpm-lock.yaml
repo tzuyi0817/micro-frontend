@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@types/node': ^18.0.4
   '@typescript-eslint/eslint-plugin': ^5.4.0
   '@typescript-eslint/parser': ^5.4.0
   '@vue/cli-plugin-eslint': ~5.0.0
@@ -13,12 +14,14 @@ specifiers:
   typescript: ~4.5.5
   vue: ^3.2.13
   vue-router: ^4.0.3
+  webpack: ^5.73.0
 
 dependencies:
   vue: 3.2.37
   vue-router: 4.1.2_vue@3.2.37
 
 devDependencies:
+  '@types/node': 18.0.4
   '@typescript-eslint/eslint-plugin': 5.30.6_ae209705aa5dadbb8d7982ceaaadd15d
   '@typescript-eslint/parser': 5.30.6_eslint@7.32.0+typescript@4.5.5
   '@vue/cli-plugin-eslint': 5.0.8_c55aa92e1e5ff62fc892a7c9d3e68cd0
@@ -29,6 +32,7 @@ devDependencies:
   eslint: 7.32.0
   eslint-plugin-vue: 8.7.1_eslint@7.32.0
   typescript: 4.5.5
+  webpack: 5.73.0
 
 packages:
 
@@ -440,7 +444,7 @@ packages:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
       '@types/eslint': 8.4.5
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
     dev: true
 
   /@types/eslint/8.4.5:
