@@ -4,21 +4,16 @@ const webpack = require('webpack');
 module.exports = defineConfig({
   pages: {
     index: {
-      entry: './src/main.ts'
+      entry: './src/index.ts'
     }
   },
-  publicPath: 'auto',
   configureWebpack: {
-    optimization: {
-      splitChunks: false,
-    },
     plugins: [
       new webpack.container.ModuleFederationPlugin({
-        name: 'exposes_1',
+        name: 'home',
         filename: 'remoteEntry.js',
-        exposes: {
-          './HelloWorld.vue': './src/components/HelloWorld.vue',
-          './AboutView.vue': './src/views/AboutView.vue',
+        remotes: {
+          exposes_1: 'exposes_1@http://localhost:8081/remoteEntry.js',
         },
         shared: {
           vue: {

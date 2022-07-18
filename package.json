@@ -1,0 +1,21 @@
+{
+  "name": "micro-vue3",
+  "version": "0.0.0",
+  "description": "Examples Webpack 5's Module Federation",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzuyi0817/micro-vue3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "./module-federation/*"
+    ]
+  }
+}
