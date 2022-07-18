@@ -1,7 +1,7 @@
 {
   "name": "micro-vue3",
   "version": "0.0.0",
-  "description": "Examples Webpack 5's Module Federation",
+  "description": "Micro frontend examples",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
