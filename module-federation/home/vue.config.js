@@ -14,6 +14,7 @@ module.exports = defineConfig({
         filename: 'remoteEntry.js',
         remotes: {
           exposes_1: 'exposes_1@http://localhost:8081/remoteEntry.js',
+          exposes_2: 'exposes_2@http://localhost:8082/remoteEntry.js',
         },
         shared: {
           vue: {

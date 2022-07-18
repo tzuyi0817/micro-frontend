@@ -1,5 +1,5 @@
 {
-  "name": "micro-vue3",
+  "name": "micro-frontend",
   "version": "0.0.0",
   "description": "Micro frontend examples",
   "private": true,
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tzuyi0817/micro-vue3.git"
+    "url": "git+https://github.com/tzuyi0817/micro-frontend.git"
   },
   "keywords": [],
   "author": "",

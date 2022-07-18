@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { defineAsyncComponent, ref } from 'vue';
+import { applyReactInVue } from 'veaury';
+import app from 'exposes_2/app';
 
 const isLoadingExpose1 = ref(true);
+const reactApp = applyReactInVue(app);
 const exposes1 = defineAsyncComponent(() => import('exposes_1/HelloWorld.vue')
   .finally(() => {
     isLoadingExpose1.value = false;
@@ -15,6 +18,8 @@ const exposes1 = defineAsyncComponent(() => import('exposes_1/HelloWorld.vue')
     <exposes1 msg="exposes_1 hello world" />
 
     <div class="hello"></div>
+
+    <react-app msg="exposes_2 app" />
   </div>
 </template>
 
