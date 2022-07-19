@@ -6,5 +6,5 @@ declare module '*.vue' {
 }
 
 declare module 'exposes_*' {
-  export default Function;
+  export default any;
 }

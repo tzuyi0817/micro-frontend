@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { defineAsyncComponent, ref } from 'vue';
-import { applyReactInVue } from 'veaury';
 import app from 'exposes_2/app';
+import useReact from '../hooks/useReact';
 
 const isLoadingExpose1 = ref(true);
-const reactApp = applyReactInVue(app);
+const reactApp = useReact(app);
 const exposes1 = defineAsyncComponent(() => import('exposes_1/HelloWorld.vue')
   .finally(() => {
     isLoadingExpose1.value = false;

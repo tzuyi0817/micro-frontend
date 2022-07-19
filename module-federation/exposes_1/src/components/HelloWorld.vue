@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <p>{{ msg }}</p>
-    This is a hello world component
+    This is hello world component
   </div>
 </template>
 
